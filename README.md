@@ -5,27 +5,33 @@ a tourism website designed to introduce visitors to the most iconic landmarks, c
 
 - Bilingual support (Arabic & English)
 - Responsive and user-friendly interface
-- Sections for landmarks, culture, and tourism information
-- Modern design with intuitive navigation
+- Sections for landmarks,events, shopping, and transportation
 - Contact form for user inquiries
+- Modular PHP structure for easy maintenance
+- Integration with MySQL database
 
+  
 ##  Technologies Used
 
 - HTML5 & CSS3
 - JavaScript
 - PHP
 - MySQL
-- Multilingual support logic
 - Bootstrap
 
 ##  Project Structure
-index.php --> Main homepage
-/arabic/ --> Arabic language pages
-/english/ --> English language pages
-/css/ --> Stylesheets
+/bootstrap/ --> Bootstrap framework files
+/css/ -->  stylesheets
+/Eng/ --> English language pages
 /img/ --> Image assets
-/Bootstrap/ --> Bootstrap library
-
+4475128_sights.sql --> SQL file to set up the database
+config.php --> Database configuration file
+contact.php --> Contact form page
+events.php --> Events page
+header.php --> Reusable page header
+index.php --> Main homepage (Arabic version)
+shopping.php --> Shopping places page
+transportation.php --> Transportation options page
 
 ##  Purpose
 
