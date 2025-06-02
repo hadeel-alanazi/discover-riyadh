@@ -1,0 +1,172 @@
+:root {
+  --dark: #08011f;
+  --white: #fff;
+  --black: #222;
+  --light-white: #f7f7f7;
+  --light-bg: #eee;
+  --hover-blue: #2d1b5b;
+  --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  --border: 1px solid rgba(0,0,0,.1);
+}
+
+/* Header Start  */
+
+.header {
+  background-color: var(--dark); 
+  box-shadow: var(--box-shadow);
+}
+
+.header .flex {
+  margin: 0 auto; 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+  padding: 1.5rem 2rem; 
+  max-width: 1200px; 
+  position: relative; 
+}
+
+.header .flex .topnavbar ul {
+  list-style: none; 
+}
+
+.header .flex .topnavbar ul li {
+  float: left; 
+  position: relative;
+}
+
+.header .flex .topnavbar ul li a {
+  font-size: 1.3rem; 
+  padding: 1rem 1.3rem; 
+  display: block; 
+  color: var(--white); 
+  transition: 0.3s;
+}
+
+/* Header Navbar Link Hover Styles */
+.header .flex .topnavbar ul li a:hover {
+  background-color: var(--light-white); 
+  color: var(--dark); 
+  border-radius: 5px;
+}
+
+/* Header Navbar Submenu Styles */
+.header .flex .topnavbar ul li ul {
+  position: absolute; 
+  left: 0; 
+  width: 15rem; 
+  background-color: var(--white); 
+  animation: fadeIn .2s linear; 
+  display: none;
+  border: var(--border);
+  z-index: 1000;
+}
+
+/* Header Navbar Submenu List Item Styles */
+.header .flex .topnavbar ul li ul li {
+  width: 100%;
+}
+
+/* Header Navbar Hover Styles */
+.header .flex .topnavbar ul li:hover ul {
+  display: inline-block; 
+}
+
+/* Header Logo Styles */
+.header .flex .logo {
+  font-size: 2.5rem; 
+  color: var(--white); 
+  font-weight: bold;
+}
+
+/* Header End */
+
+/* Footer Start */
+
+/* Styling for the footer section */
+.footer {
+  background-color: var(--light-bg); 
+  color: var(--black); 
+  width: 100%; 
+  bottom: 0; 
+  left: 0; 
+  border-top: var(--border);
+  padding-top: 2rem;
+}
+
+.footer .content {
+  display: flex; 
+  justify-content: space-evenly; 
+  margin: 1.5rem; 
+  flex-wrap: wrap;
+}
+
+.footer .content p {
+  margin-bottom: 1.3rem; 
+}
+
+.footer .content a {
+  text-decoration: none; 
+  color: var(--dark); 
+  transition: 0.3s;
+}
+
+.footer .content a:hover {
+  border-bottom: 1px solid var(--hover-blue); 
+}
+
+.footer .content h4 {
+  margin-bottom: 1.3rem; 
+  font-size: 19px; 
+  color: var(--black);
+  font-weight: bold;
+}
+
+footer {
+  text-align: center; 
+  margin-bottom: 2rem; 
+  color: var(--black);
+}
+
+footer hr {
+  margin: 2rem 0; 
+  border-color: var(--dark);
+}
+
+/* Media queries for responsiveness */
+
+/* For screens smaller than 767px */
+@media (max-width: 767px) {
+  .footer .content {
+    display: flex; 
+    flex-direction: column; 
+    font-size: 14px; 
+    gap: 1.5rem;
+  }
+
+  .footer {
+    position: unset; 
+  }
+}
+
+/* For screens between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer .content,
+  .footer {
+    font-size: 14px; 
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .footer {
+    position: unset; 
+  }
+}
+
+/* Media query for extra small screens */
+@media (max-width: 500px){
+    .navbar-container input[type="checkbox"]:checked ~ .logo{
+        display: none;
+    }
+}
+/* Footer End */
