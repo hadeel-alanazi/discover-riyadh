@@ -4,7 +4,6 @@ a tourism website designed to introduce visitors to the most iconic landmarks, c
 ##  Features
 
 - Bilingual support (Arabic & English)
-- Responsive and user-friendly interface
 - Sections for landmarks,events, shopping, and transportation
 - Contact form for user inquiries
 - Modular PHP structure for easy maintenance
